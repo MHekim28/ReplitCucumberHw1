@@ -12,7 +12,7 @@ public class BasePOM {
 
     public BasePOM() {
         driver = BaseDriver.getDriver();
-        wait = new WebDriverWait(driver, 20);
+        wait = new WebDriverWait(driver, 10);
     }
 
     public void waitAndClick (WebElement element){

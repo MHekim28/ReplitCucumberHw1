@@ -6,12 +6,12 @@ import poms.BasePOM;
 import poms.TablePOM;
 import utils.BaseDriver;
 
-public class LoginStep {
+public class LoginAndInfoStep {
 
     BasePOM base = new BasePOM();
    TablePOM page = new TablePOM();
 
-    @Given("^Navigate to: http://automationpractice\\.com/index\\.php$")
+    @Given("^Navigate to: http://automationpractice.com/index.php$")
     public void navigate_to_http_automationpractice_com_index_php()  {
         WebDriver driver = BaseDriver.getDriver();
         driver.manage().window().maximize();
@@ -25,8 +25,8 @@ public class LoginStep {
 
     @Then("^Enter the Email Address and Password$")
     public void enter_the_Email_Address_and_Password()  {
-        base.waitAndSendKeys(page.emailAddressButton, "sseagle@gmail.com");
-        base.waitAndSendKeys(page.passwordButton, "KafkasKartali1978@");
+        base.waitAndSendKeys(page.emailAddressButton, "rihonig796@arasj.net");
+        base.waitAndSendKeys(page.passwordButton, "gY1aB9xQ2xB4sG4d");
     }
 
     @And("^Click on sign in button$")

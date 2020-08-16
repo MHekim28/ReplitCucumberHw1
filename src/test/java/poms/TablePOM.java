@@ -18,7 +18,31 @@ public class TablePOM extends BasePOM{
     @FindBy (id = "passwd")
     public WebElement passwordButton;
 
+    @FindBy (id = "confirmation")
+    public WebElement passwordConfirmationTextBox;
+
     @FindBy (css = ".icon-lock")
     public WebElement signInForCredentialsButton;
+
+    @FindBy (css = ".icon-user")
+    public WebElement myPersonalInfoButton;
+
+    @FindBy (id = "firstname")
+    public WebElement firstNameTextBox;
+
+    @FindBy (id = "old_passwd")
+    public WebElement currentPasswordTextBox;
+
+    @FindBy (css = "[name='submitIdentity']")
+    public WebElement saveButton;
+
+    @FindBy (css = ".account")
+    public WebElement accountButton;
+
+    @FindBy (xpath = "//i[@class='icon-chevron-left']")
+    public WebElement backToyourAccountButton;
+
+
+
 }
 
