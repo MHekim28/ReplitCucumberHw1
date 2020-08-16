@@ -30,7 +30,7 @@ public class LoginStep {
         base.waitAndSendKeys(page.passwordButton, "KafkasKartali1978@");
     }
 
-    @Then("^Click on sign in button$")
+    @And("^Click on sign in button$")
     public void click_on_sign_in_button()  {
         base.waitAndClick(page.signInForCredentialsButton);
     }
