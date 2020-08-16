@@ -8,13 +8,12 @@ import utils.BaseDriver;
 
 public class LoginStep {
 
-    private WebDriver driver;
     BasePOM base = new BasePOM();
    TablePOM page = new TablePOM();
 
-    @Given("^Navigate to:  http://automationpractice\\.com/index\\.php$")
+    @Given("^Navigate to: http://automationpractice\\.com/index\\.php$")
     public void navigate_to_http_automationpractice_com_index_php()  {
-        driver = BaseDriver.getDriver();
+        WebDriver driver = BaseDriver.getDriver();
         driver.manage().window().maximize();
         driver.get("http://automationpractice.com/index.php");
     }
